@@ -117,7 +117,7 @@ CHINA_AREA = ['河北', '山东', '辽宁', '黑龙江', '吉林'
               '贵州', '安徽', '重庆', '北京', '上海', '天津', '广西', '内蒙', '西藏', '新疆', '宁夏', '香港', '澳门']
 QQWRY_PATH = os.path.dirname(__file__) + "/data/qqwry.dat"
 THREADNUM = 5
-API_PORT = 8000
+API_PORT = 8421
 '''
 爬虫爬取和检测ip的设置条件
 不需要检测ip是否已经存在，因为会定时清理
@@ -196,7 +196,7 @@ TEST_HTTPS_HEADER = 'https://httpbin.org/get'
 #因此在这个地方用户可以自己添加检测函数,我以百度为访问网址尝试一下
 #大家可以看一下Validator.py文件中的baidu_check函数和detect_proxy函数就会明白
 
-CHECK_PROXY={'function':'checkProxy'}#{'function':'baidu_check'}
+CHECK_PROXY={'function':'baidu_check'}#{'function':'checkProxy'}
 
 #下面配置squid,现在还没实现
 #SQUID={'path':None,'confpath':'C:/squid/etc/squid.conf'}
